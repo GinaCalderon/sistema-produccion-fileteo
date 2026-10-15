@@ -14,7 +14,7 @@ public class Main {
 
             // Ejemplo 2: Rompe la regla de conservación de masa
             try {
-                RegistroFileteo regError = new RegistroFileteo(new Date(), "LOTE-101", 100.0, 40.0, 50.0, op);
+                new RegistroFileteo (new Date (), "LOTE-101", 100.0, 40.0, 50.0, op);
             } catch (IllegalArgumentException e) {
                 System.out.println("Error detectado correctamente: " + e.getMessage());
             }
